@@ -1,6 +1,5 @@
 from pathlib import Path
 import django_heroku, os
-from decouple import config
 from django.contrib.messages import constants as messages
 
 MESSAGE_TAGS = {
@@ -22,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-r%h(w2fgcr2bb^tsdd=iv##f^2huo7n4i-t@4_&x3(5!wtt(eg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool, default=False)
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
