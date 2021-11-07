@@ -1,0 +1,1 @@
+web: gunicorn webvortex.wsgi --log-file -

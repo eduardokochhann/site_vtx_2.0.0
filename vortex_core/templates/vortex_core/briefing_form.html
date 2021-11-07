@@ -1,0 +1,303 @@
+<form class="row" id="form" method="post" action="{% url 'send_application' %}" enctype="multipart/form-data">
+{% csrf_token %}
+<!--Forms-->
+
+	<div class="container forms-briefing">
+		<div class="title-briefing">
+			<h1>Briefing</h1>
+			<h3>Identidade Visual</h3>
+		</div>
+
+  			<div class="form-widget">
+
+						<div class="row">
+							<div class="col-lg-12">
+								
+									<div class="row">
+										<div class="col-6 form-group">
+											<label>Nome:</label>
+											<input type="text" name="{{ form.nome.name }}" id="freelance-quote-nome" class="form-control required" value="" placeholder="Seu nome aqui">
+										</div>
+									
+										<div class="col-6 form-group">
+											<label>Telefone:</label><br>
+											<input type="text" name="{{ form.telefone.name }}" id="freelance-quote-phone" class="form-control required" value="" placeholder="51 99999-9999">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-6 form-group">
+											<label>E-mail:</label>
+											<input type="email" name="{{ form.email.name }}" id="freelance-quote-email" class="form-control required" value="" placeholder="mkt@company.com">
+										</div>
+
+										<div class="col-6 form-group">
+											<label>Nome da Empresa:</label><br>
+											<input type="text" name="{{ form.company.name }}" id="freelance-quote-company" class="form-control" value="" placeholder="Company Inc.">
+										</div>
+									</div>
+
+							</div><!--/col-lg-12 inicial-->							
+						</div><!--/row inicial-->
+
+						<div class="clear"></div><div class="line"></div>
+
+						<!--========PERGUNTAS========-->
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>1. Qual é o nicho de atuação da sua empresa?</label>
+								<textarea name="{{ form.prgum.name }}" id="prgum.name" class="form-control" cols="30" rows="1"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>2. A quanto tempo sua empresa está no mercado?</label>
+								<textarea name="{{ form.prgdois.name }}" id="prgdois.name" class="form-control" cols="30" rows="1"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>3. Conte um pouco sobre a sua empresa:</label>
+								<textarea name="{{ form.prgtres.name }}" id="form.prgtres.name" class="form-control" cols="30" rows="3"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>4. Quais produtos e ou serviços sua empresa oferece?</label>
+								<textarea name="{{ form.prgquatro.name }}" id="prgquatro.name" class="form-control" cols="30" rows="1"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>5. Conte um pouco sobre seu público-alvo:<br>
+									<small>exemplo: gênero, idade, etc.</small></label>
+								<textarea name="{{ form.prgcinco.name }}" id="prgcinco.name" class="form-control" cols="30" rows="3"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>6. Qual a classe social do seu público?</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott">
+                							<input type="radio" name="{{ form.prgseisa.name }}" id="prgseisa.name"> A
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary">
+                							<input type="radio" name="{{ form.prgseisb.name }}" id="prgseisb.name" autocomplete="off" value="0"> B
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott">
+                							<input type="radio" name="{{ form.prgseisc.name }}" id="prgseisc.name" autocomplete="off" value="0"> C
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott">
+                							<input type="radio" name="{{ form.prgseisd.name }}" id="prgseisd.name" autocomplete="off" value="0"> D
+            							</label>
+									</div>
+									<textarea style="margin-left: 4px;" name=" {{ form.prgseisout.name }} " id="prgseisout.name" placeholder="Não tem certeza? Sem problemas, descreva a sua ideia aqui." class="form-control" cols="8" rows="1"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-6 form-group">
+								<label>7.Cite três concorrêntes diretos e ou indiretos da sua empresa:</label>
+								<input type="text" name="{{ form.prgsete1.name }}" id="prgsete1.name" class="form-control required" value="" placeholder="1º concorrênte">
+								<input type="text" name="{{ form.prgsete2.name }}" id="prgsete2.name" class="form-control required" value="" placeholder="2º concorrênte">
+								<input type="text" name="{{ form.prgsete3.name }}" id="prgsete3.name" class="form-control required" value="" placeholder="3º concorrênte">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>8. Qual mensagem você quer passar para o público?</label>
+								<textarea name="{{ form.prgoito.name }}" id="prgoito.name" class="form-control" cols="30" rows="3"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>9. Sobre as cores:</label>
+									<div class="row"></div>
+										<div class="col-6 form-group item-9">
+											<label><small>1. Possui alguma preferência de cores? Se sim, quais?</small></label>
+											<textarea name="{{ form.prgnove1.name }}" id="prgnove1.name" class="form-control" cols="6" rows="1"></textarea>
+										</div>
+
+										<div class="col-6 form-group">
+											<label><small>2. Existe alguma cor que você não queira? Se sim, quais?</small></label>
+											<textarea name="{{ form.prgnove2.name }}" id="prgnove2.name" class="form-control" cols="6" rows="1"></textarea>
+										</div>
+									</div>									
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>10. Possui slogan? Se sim, qual?</label>
+								<textarea name="{{ form.prgdez.name }}" id="prgdez.name" class="form-control" cols="24" rows="1"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>11. Existe alguma outra marca/empresa que te inspira?</label>
+								<textarea name="{{ form.prgonze.name }}" id="prgonze.name" class="form-control" cols="30" rows="1"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>12. Características da sua marca:</label>
+									
+											
+											<div class="input-group mb-12">
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze1.name }}" id="prgdoze1.name" autocomplete="off" value="0"> Moderna
+													</label>
+												</div>
+											
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze2.name }}" id="prgdoze2.name" autocomplete="off" value="0"> Séria
+													</label>
+												</div>
+											</div>
+									
+									
+											
+											<div class="input-group mb-12">
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze3.name }}" id="prgdoze3.name" autocomplete="off" value="0"> Extrovertida
+													</label>
+												</div>
+											
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze4.name }}" id="prgdoze4.name" autocomplete="off" value="0"> Delicada
+													</label>
+												</div>
+											</div>
+									
+									
+											
+											<div class="input-group mb-12">
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze5.name }}" id="prgdoze5.name" autocomplete="off" value="0"> Conservadora
+													</label>
+												</div>
+											
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze6.name }}" id="prgdoze6.name" autocomplete="off" value="0"> Divertida
+													</label>
+												</div>
+											</div>
+									
+									
+											
+											<div class="input-group mb-12">
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze7.name }}" id="prgdoze7.name" autocomplete="off" value="0"> Elegante
+													</label>
+												</div>
+											
+												<div class="input-group-prepend classe-pb">
+													<label class="btn btn-outline-secondary ls0 nott btn-vortex-p12">
+														<input type="radio" name="{{ form.prgdoze8.name }}" id="prgdoze8.name" autocomplete="off" value="0"> Nerd/Geek
+													</label>
+												</div>
+											</div>
+									
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>13. Você vai precisar de um manual de marca?</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott">
+                							<input type="radio" name="{{ form.prgtreze1.name }}" id="prgtreze1.name" autocomplete="off" value="0"> Sim
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott">
+                							<input type="radio" name="{{ form.prgtreze2.name }}" id="prgtreze2.name" autocomplete="off" value="0"> Não
+            							</label>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="col-12 form-group">
+								<label>14. Você irá precisar de algum item de papelaria? Se sim, quais?</label>
+								
+								<div class="input-group mb-12">									
+										<div class="input-group-prepend classe-pb">
+											<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+												<input type="radio" name="{{ form.prgquatorze1.name }}" id="prgquatorze1.name" autocomplete="off" value="0"> Cartão de visita
+											</label>
+										</div>									
+								</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze2.name }}" id="prgquatorze2.name" autocomplete="off" value="0"> Papel Timbrado
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze3.name }}" id="prgquatorze3.name" autocomplete="off" value="0"> Assinatura de e-mail
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze4.name }}" id="prgquatorze4.name" autocomplete="off" value="0"> Envelope saco (A4)
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze5.name }}" id="prgquatorze5.name" autocomplete="off" value="0"> Envelope Carta
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze6.name }}" id="prgquatorze6.name" autocomplete="off" value="0"> Pasta
+            							</label>
+									</div>
+									<div class="input-group-prepend classe-pb">
+										<label class="btn btn-outline-secondary ls0 nott btn-vortex-p14">
+                							<input type="radio" name="{{ form.prgquatorze7.name }}" id="prgquatorze7.name" autocomplete="off" value="0"> Crachá
+            							</label>
+									</div>
+									
+										<textarea style="margin-left: 4px;" name=" {{ form.prgquatorze8.name }} " id="prgquatorze8.name" placeholder="outros..." class="form-control" cols="6" rows="1"></textarea>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<button type="submit" name="jobs-submit" id="jobs-submit" class="button button-border button-rounded btn-vortex-brief">Enviar</button>
+						</div>
+
+
+			</div><!--/form-widget-->				
+	</div><!--/container forms-briefing-->
+
+</form>
