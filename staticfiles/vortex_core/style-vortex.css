@@ -1,0 +1,449 @@
+/*
+*
+* @author Eduardo Kochhann
+* @version 0.2
+* 
+*/
+
+/* ============================== Layout - BASE ================================= */
+
+/* == > Cabeçalho < == */
+
+#header {
+    border: none;
+}
+
+#wrapper {
+    background: url('/static/vortex_core/img/background.png') no-repeat;
+    background-size: cover;
+     
+}
+
+.full-header{
+    border-bottom: none;
+    
+}
+
+.header-vortex {
+    border-bottom: none;
+    background-image: linear-gradient(to bottom right, rgb(40,64,115), 70%, rgb(127,243,253));
+    box-shadow: 0px 0px 7px 0px rgba(255, 1, 1, 0.1);
+    
+}
+#logo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.full-header .primary-menu .menu-container {
+    border-right: 0px;
+}
+
+.menu-item a{ /*texto menu*/
+    color: white;
+    font-family:'Montserrat';
+    font-size: 12px;
+}
+
+.menu-item:hover > .menu-link, .menu-item.current > .menu-link {
+    color: rgb(40,64,115);
+}
+
+.divisor {
+    width: 1px;
+    height: 21px;
+    background: white;
+    margin: 16px 10px;
+}
+
+/* == > Contato < == */
+
+.social-icon img {
+    transition: all .2s ease;
+}
+.social-icon:hover img:first-child{
+    margin-top: 15px;
+}
+
+.social-icon img:last-child {
+    color: white;
+}
+
+.social-icon img { 
+    display: block;
+    position: relative;
+}
+/* == > Rodapé < == */
+
+
+footer.dark {
+    background: url('/static/vortex_core/img/background.png') no-repeat;
+}
+
+#copyrights{
+    background-image: linear-gradient(to top right, #284073, 70%, #7ff3fd);
+    color: white;
+}
+
+.full-header #logo{
+    border-right: 0px;
+}
+
+.div-contato-vtx {
+    margin-bottom: 20px;
+}
+
+/* ================================ Home =================================== */
+/* == Primeira sessão == */
+
+.content-wrap {
+    background: url('../vortex_core/img/background.png');
+    background-size: cover;
+}
+
+.bnt-vortex {
+    color: #284073;
+    background: #7ff3fd; 
+    border-radius: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    padding:10px 35px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;    
+}
+
+.capa {
+    display: table;
+    margin-top: 30px;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;    
+}
+
+.capa h1 {    
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    letter-spacing: -0.02em;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-bottom: 35px;
+}
+
+.capa h3 {    
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-bottom: 50px; 
+}
+
+.content-wrap .header-stick {
+    margin-top: 7rem !important;
+    margin-left: -89px;
+    border: none;
+    color: white;
+}
+
+
+/* == Segunda sessão == */
+.era-digital h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.era-digital p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    text-align: justify;
+}
+
+#content p {
+    line-height: 1.3;
+}
+
+#servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+
+.row-div-serv {
+    margin-bottom: 35px;
+    margin-left: 155px;
+}
+
+.icon-service-vtx img {
+    width:75px;
+}
+
+.img-servicos1 {
+    padding: 8px 0px 10px 0px;
+    margin-top: 40px
+}
+
+.img-servicos2 {
+    padding: 10px 0px 10px 0px;
+    margin-top: 4px
+}
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.2s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* == Terceira sessão == */
+#quem-somos h2 {
+    color: #ddd;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 42px;
+}
+
+#quem-somos p{
+    color:#ddd;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    text-align: justify;
+    margin-top: 18px;
+    margin-bottom: -64px
+}
+
+.img-quem-somos {
+    padding-top: 140px;
+}
+
+.nosso-fim-vtx {
+    visibility: hidden;
+}
+/* ============================== Briefing ================================= */
+
+/* == Layout == */
+.forms-briefing {
+    margin-top: -30px;
+}
+
+.classe-pb {
+    padding-left: 4px;
+}
+
+.informacoes-pessoais {
+    padding-top: 50px;
+}
+/* == Tipografia == */
+.form-group label{
+    color: white;
+}
+
+.title-briefing h1 {
+    margin-bottom: 0px;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.title-briefing h3 {
+    font-family: 'Montserrat';
+    color: white;
+    margin-bottom: 40px
+}
+
+.btn-vortex-p12 {
+    width: 150px;
+    text-align: left;
+}
+
+.button.button-border {
+    border: none;
+    background-color: rgb(40,64,115);;
+    color: white;
+    font-weight: 700;
+    text-shadow: none;
+    margin-top: 25px;
+    margin-left: -12px;
+}
+
+.btn-vortex-p14 {
+    width: 220px;
+    text-align: left;
+    
+}
+
+/* ============================== MEDIA QUERY ================================= */
+@media only screen and (max-width: 480px){
+/* == Base == */
+/*#header {
+    position: fixed;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+}*/
+
+.capa {
+    margin-top: -60px;
+    margin-left: -3px;
+}
+
+.retina-logo {
+    width: 185px;
+    height: 65px;
+    margin-left: -28px;
+}
+
+.menu-item:not(:first-child) {
+    border: none;
+}
+
+.divisor {
+    visibility: hidden;
+}
+
+.menu-item a{ /*texto menu*/
+    font-size: 12px;
+    margin-left: -5px;
+}
+
+.menu-link {
+    line-height: 3px;
+    padding: 16px 6px;
+    font-size: 500;
+    text-transform: none;
+}
+
+.menu-link-briefing-vtx  {
+    margin-top: -55px
+}
+
+/* == contato == */
+a small{
+    visibility: hidden;
+}
+
+#footer .footer-widgets-wrap {
+    padding: 22px 0;
+}
+
+.div-contato-vtx {
+    margin-bottom: -80px
+}
+
+/* == copy == */
+#copyrights {
+    padding: 9px 0;
+}
+
+.div-copy-vtx {
+    visibility: hidden;
+}
+
+/* == Home == */
+
+.capa{
+    margin-left: -17px;
+}
+.capa h1{
+    font-size: 55px;
+    margin-top: 55px;
+    margin-bottom: 27px;
+ 
+}
+
+.capa h3{
+    font-size: 45px;
+}
+
+.promo h3, span {
+    margin-right: 0px;
+    padding-left: 23px;
+}
+
+#servicos {
+    margin-top: -105px;
+
+}
+
+.row-div-serv {
+    margin-bottom: 0px;
+    margin-left: 85px;
+}
+
+#eradigital {
+    margin-left: 27px;
+}
+
+#eradigital img {
+    padding-right: 80px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.img-servicos1 {
+    margin-top: -35px;
+}
+
+.img-servicos2 {
+    margin-top: -9px;
+    padding: 0px;
+
+}
+
+#eradigital p {
+    margin-left: 28px;
+    margin-right: 85px;
+}
+
+.era-digital h4 {
+    margin-left: 27px;
+    margin-top: 28px;
+}
+
+#quem-somos h2 {
+    font-size: 30px;
+    margin-left: -15px;
+}
+
+#quem-somos p {
+    margin-left: -13px;
+    margin-right: -11px;
+}
+
+.contato h4{
+    margin-left: 15px;
+    margin-bottom: 14px;
+    margin-top: -14px;
+}
+
+.nosso-fim-vtx {
+    visibility: visible;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+/* =========================TESTE Style.css (HTML)==========================*/
+
+}
